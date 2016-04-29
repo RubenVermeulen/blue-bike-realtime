@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Blue-bike, Gent, Real-Time, real time, blue bike">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bike-blue Real-Time">
+    <meta property="og:description" content="Bekijk in real-time de beschikbaarheid van de Blue-bike fietsen in Gent.">
+    <meta property="og:image" content="http://www.bluebikerealtime.be/img/og.png">
+    <meta property="og:locale" content="nl_NL">
+
+    <title>Blue-bike Real-Time</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- App icon, when mobile users create a shortcut -->
+    <link rel="apple-touch-icon" href="img/app-icon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="img/app-icon.png"/>
+</head>
+<body>
+
+<!-- Google Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41003816-8', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<div id="main">
+    <header>
+        <div class="symbol"><img src="img/refresh.svg" alt="Real-Time" height="60"></div>
+        <h1 class="title">Blue-bike Real-Time</h1>
+    </header>
+
+    <div id="error">Het was niet mogelijk om nieuwe informatie op te halen. Controleer je internetverbinding.</div>
+
+    <div class="item">
+        <div class="content show">
+            <p>Bekijk in real-time de beschikbaarheid van de <a href="http://www.blue-bike.be/" target="_blank">Blue-bike</a> fietsen in Gent. De gegevens worden elke 60 seconden opnieuw geladen.</p>
+        </div>
+    </div>
+    <div id="l1" class="item">
+        <div class="header closed">Gent Sint-Pieters</div>
+        <div class="content">
+            <div class="clearfix" style="margin-bottom: 10px">
+                <div class="stat">
+                    <div class="capacity-available number color-green">0</div>
+                    <div>beschikbaar</div>
+                </div>
+                <div class="stat">
+                    <div class="capacity-in-use number color-red">0</div>
+                    <div>in gebruik</div>
+                </div>
+                <div class="stat">
+                    <div class="capacity-in-maintenance number">0</div>
+                    <div>in onderhoud</div>
+                </div>
+                <div class="stat">
+                    <div class="capacity-total number">0</div>
+                    <div>totaal</div>
+                </div>
+            </div>
+            <hr>
+            <div class="chart"></div>
+
+            <a href="" class="btn btn-map" target="_blank">Open Google Maps</a>
+        </div>
+    </div>
+    <div id="l2" class="item">
+        <div class="header closed">Gent Dampoort</div>
+        <div class="content">
+            <div class="clearfix" style="margin-bottom: 10px">
+                <div class="stat">
+                    <div class="capacity-available number color-green">0</div>
+                    <div>beschikbaar</div>
+                </div>
+                <div class="stat">
+                    <div class="capacity-in-use number color-red">0</div>
+                    <div>in gebruik</div>
+                </div>
+                <div class="stat">
+                    <div class="capacity-in-maintenance number">0</div>
+                    <div>in onderhoud</div>
+                </div>
+                <div class="stat">
+                    <div class="capacity-total number">0</div>
+                    <div>totaal</div>
+                </div>
+            </div>
+            <hr>
+            <div class="chart"></div>
+
+            <a href="" class="btn btn-map" target="_blank">Open Google Maps</a>
+        </div>
+    </div>
+
+    <footer>
+            Ontwikkeld door <a href="http://www.rubenvermeulen.be" target="_blank">Ruben Vermeulen</a>
+    </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 16px;
+    background: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Main
+*************************************/
+
+#main {
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header
+*************************************/
+
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }
+}
+
+header .symbol {
+    animation: 8s rotate360 infinite linear;
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+}
+
+header .symbol,
+header .title {
+    text-align: center;
+}
+
+/* Item
+*************************************/
+
+.item {
+    margin-bottom: 15px;
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.item .header {
+    padding: 20px;
+    background-color: #2962FF;
+    font-size: 1.25em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.item .content {
+    display: none;
+    padding: 20px;
+}
+
+.item .content .stat {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.item .content .stat .number {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.item .open {
+    background-image: url('../img/open-white.svg');
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    background-size: 40px;
+}
+
+.item .closed {
+    background-image: url('../img/closed-white.svg');
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    background-size: 40px;
+}
+
+.item .show {
+    display: block;
+}
+
+.chart {
+    width: 236px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-map {
+    background: #e5e5e5;
+    color: #000;
+    transition: 0.2s background linear;
+}
+
+.btn-map:hover {
+    background: #d1d1d1;
+}
+
+/* Footer
+*************************************/
+
+footer {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 0.85em;
+    line-height: 1.7;
+    color: #505050;
+}
+
+/* Headings
+*************************************/
+
+h1 {
+    font-weight: 500;
+}
+
+/* Misc
+*************************************/
+
+a {
+    color: #2962FF;
+}
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+hr {
+    height: 2px;
+    width: 100%;
+    margin:30px 0;
+    border:0;
+    background-color:#dadada;
+}
+
+.color-green {
+    color: #3CC031;
+}
+
+.color-red {
+    color: #ff0000;
+}
+
+#error {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 20px;
+    background: #FF5252;
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsive
+*************************************/
+
+@media (max-width: 850px) {
+    #main {
+        width: 500px;
+    }
+}
+
+@media (max-width: 550px) {
+    #main {
+        width: 100%;
+    }
+}
