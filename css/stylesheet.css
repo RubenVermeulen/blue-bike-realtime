@@ -64,7 +64,11 @@ header .title {
     padding: 20px;
 }
 
-.item .content .stat {
+.item .content .stats {
+    margin-bottom: 10px
+}
+
+.item .content .stats .stat {
     width: 50%;
     float: left;
     text-align: center;
