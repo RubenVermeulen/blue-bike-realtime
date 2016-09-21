@@ -25,10 +25,10 @@ var app = {
     },
     load: function () {
         // Gent Sint-Pieters
-        app.loadOpenDataGhent("l1", "http://datatank.stad.gent/4/mobiliteit/bluebikedeelfietsensintpieters.json");
+        app.loadOpenDataGhent("l1", "https://datatank.stad.gent/4/mobiliteit/bluebikedeelfietsensintpieters.json");
 
         // Gent Dampoort
-        app.loadOpenDataGhent("l2", "http://datatank.stad.gent/4/mobiliteit/bluebikedeelfietsendampoort.json");
+        app.loadOpenDataGhent("l2", "https://datatank.stad.gent/4/mobiliteit/bluebikedeelfietsendampoort.json");
     },
     loadOpenDataGhent: function (div, url) {
         $.ajax({
@@ -47,11 +47,11 @@ var app = {
                     data.properties.attributes[3].value
                 ));
 
-                $("#error").hide();
+                $("#error").slideUp();
                 app.changeSymbolState("running");
             },
             error: function () {
-                $("#error").show();
+                $("#error").slideDown();
                 app.changeSymbolState("paused");
 
                 // Tries to reload the data every 5s when the connection failed
