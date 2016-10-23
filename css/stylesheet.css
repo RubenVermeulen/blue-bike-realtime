@@ -38,7 +38,8 @@ header .symbol {
 }
 
 header .symbol,
-header .title {
+header .title,
+#apps {
     text-align: center;
 }
 
@@ -125,7 +126,7 @@ header .title {
 
 footer {
     text-align: center;
-    margin: 40px 0;
+    margin: 20px 0 40px 0;
     font-size: 0.85em;
     line-height: 1.7;
     color: #505050;
